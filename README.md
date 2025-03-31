@@ -66,8 +66,8 @@ Portafolio/
 
 ## 👨‍💻 Autor
 
-Carlos Alberto Ortiz Pérez Vertti
-Portafolio creado con fines educativos para la práctica y el aprendizaje de desarrollo web.
+- Carlos Alberto Ortiz Pérez Vertti
+- Portafolio creado con fines educativos para la práctica y el aprendizaje de desarrollo web.
 
 ---
 
