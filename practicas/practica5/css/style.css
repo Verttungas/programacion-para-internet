@@ -1,0 +1,14 @@
+#tabla tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  #tabla tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  #tabla tbody tr:hover {
+    background-color: #ddd;
+  }
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  

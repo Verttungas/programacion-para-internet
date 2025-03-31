@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación de Calificación</title>
+</head>
+<body>
+  <h1>Evaluación de Calificación</h1>
+  <form id="gradeForm">
+    <label for="calificacion">Ingrese la calificación (0-10): </label>
+    <input type="number" id="calificacion" step="0.1" required>
+    <button type="button" onclick="evaluarCalificacion()">Evaluar</button>
+  </form>
+  <p id="resultado"></p>
+
+  <!-- Enlace al archivo JavaScript en la subcarpeta js -->
+  <script src="js/calificacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#practicas">Prácticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mt">Conversor MT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5 mt-5">
+        <div class="container">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <p class="lead">Explora mis prácticas y proyectos desarrollados en el curso de Programación para Internet</p>
+        </div>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section id="about" class="container py-5 text-center">
+        <h2>Sobre Mí</h2>
+        <img src="img/foto-perfil.jpg" alt="Foto de perfil" class="rounded-circle mb-3" width="150">
+        <p>Hola, soy <strong>Carlos Alberto Ortiz Pérez Vertti</strong>, freelancer con certificaciones en IT Support y automatización de tareas con Python por Google vía Coursera. También cuento con un certificado en bases de datos SQL de Platzi.</p>
+        <p>Soy fundador de <strong>Techno Boost MX</strong> (<a href="https://technoboost.com.mx" target="_blank">technoboost.com.mx</a>), una empresa dedicada al soporte IT. Además, trabajé en <strong>Azteca Construcciones Industriales S.A. de C.V.</strong> desarrollando un prototipo de aplicación para gestionar recursos en tiempo real y combatir el robo de combustible.</p>
+        <p>Actualmente, formo parte de <strong>Daimler Truck México</strong>, donde brindo soluciones de desarrollo enfocadas en Business Intelligence, flujo de datos con bases de datos, Power BI, Python, entre otros.</p>
+        <h5>Habilidades Técnicas</h5>
+        <p>Flask, MongoDB, SQL, Python, C, C++, Java, JavaScript, CSS, HTML, Linux Mint, MacOS, Windows, Bootstrap, Redes, BI, Power BI.</p>
+        <h5>Contacto</h5>
+        <p>
+            📧 <a href="mailto:c.vertti@outlook.com">c.vertti@outlook.com</a><br>
+            🔗 <a href="https://www.linkedin.com/in/carlos-alberto-ortiz-p%C3%A9rez-vertti-824b9a2a0/" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+    <!-- Prácticas -->
+    <section id="practicas" class="container py-5">
+        <h2 class="text-center">Prácticas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3"><a class="btn btn-outline-primary w-100" href="practicas/practica2/index.html">Práctica 2 - HTML</a></div>
+            <div class="col-md-4 mb-3"><a class="btn btn-outline-primary w-100" href="practicas/practica3/index.html">Práctica 3 - Tablas y CSS</a></div>
+            <div class="col-md-4 mb-3"><a class="btn btn-outline-primary w-100" href="practicas/practica4/index.html">Práctica 4 - JavaScript 1</a></div>
+            <div class="col-md-4 mb-3"><a class="btn btn-outline-primary w-100" href="practicas/practica5/index.html">Práctica 5 - JavaScript 2</a></div>
+            <div class="col-md-4 mb-3"><a class="btn btn-outline-primary w-100" href="practicas/practica6/index.html">Práctica 6 - HTML5 Multimedia</a></div>
+        </div>
+    </section>
+
+    <!-- Conversor de Unidades -->
+    <section id="mt" class="container py-5">
+        <h2 class="text-center">Conversor de Unidades</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <select id="category" class="form-select">
+                    <option value="temperatura">Temperatura</option>
+                    <option value="distancia">Distancia</option>
+                    <option value="tiempo">Tiempo</option>
+                </select>
+            </div>
+            <div class="col-md-3"><input type="number" id="inputValue" class="form-control" placeholder="Valor" /></div>
+            <div class="col-md-2"><select id="fromUnit" class="form-select"></select></div>
+            <div class="col-md-2"><select id="toUnit" class="form-select"></select></div>
+            <div class="col-md-1"><button id="convertBtn" class="btn btn-primary">Convertir</button></div>
+        </div>
+        <div class="mt-3 text-center">
+            <input type="text" id="outputValue" class="form-control" readonly placeholder="Resultado" />
+        </div>
+        <script src="mt-conversor/script.js"></script>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
